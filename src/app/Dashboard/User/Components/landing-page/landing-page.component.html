@@ -1,0 +1,272 @@
+<div class="container bg-white mx-auto bg-">
+
+    <div class="relative h-[550px] lg:h-screen w-full">
+        <!-- Background Image -->
+        <div
+          class="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style="background-image: url(assets/imagesr/banner.png);"
+        ></div>
+      
+        <!-- Overlay -->
+        <div
+          class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center"
+        >
+        <!-- Top  -->
+     <div class="absolute top-0 w-full">
+        <div class="flex items-center justify-between px-5 py-1.5 bg-gray-900 text-white">
+            <div class="text-sm flex items-center w-20">
+                <h4>CAD</h4>
+                <!-- svg  -->
+                 <img class="h-6 w-6 text-white " src="assets/imagesr/SVGd.png" alt="">
+            </div>
+    
+            <!-- sing menu  -->
+             <div class="flex items-center justify-end gap-x-4 text-sm text-white">
+                <div class="">Sign In</div>
+                <div class="">Create Account</div>
+             </div>
+        </div>
+        <!-- top 2nd bar  -->
+         <div class="w-full grid grid-cols-2 lg:grid-cols-3 items-center pl-5 py-2 bg-gray-700 opacity-50">
+            <div class="col-span-1">
+              <div class="md:hidden flex gap-x-3">
+                <div class=""><img class="h-6 w-6" src="assets/imagesr/ButtonSVG.png" alt=""></div>
+                <div class=""><img class="h-6 w-6" src="assets/imagesr/searchSVG.png" alt=""></div>
+
+              </div>
+            </div>
+            <div class="col-span-1 hidden lg:block">
+              <div class="">
+                <div class="w-full flex flex-row items-center justify-start text-sm text-white gap-x-3">
+                        <div class="">Men</div>
+                        <div class="">Women</div>
+                        <div class="">Company</div>
+                        <div class="">Store</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-span-1 w-full px-5">
+              <div class="md:hidden flex items-center justify-end text-white gap-x-5 text-xs ">
+                <div class=""><img class="h-6 w-6" src="assets/imagesr/QSVG.png" alt=""></div>
+                <div class="flex items-center justify-center gap-x-2 ">
+                  <div >
+                      <img class="w-6 h-6" src="assets/imagesr/SVGCart.png" alt="">
+                  </div>
+                  <div class="text-sm">0</div>
+              </div>
+
+              </div>
+             <!-- lg size  -->
+              <div class="hidden lg:block">
+                <div class="flex items-center text-white gap-x-2 justify-end">
+                  <div class="">Search</div>
+                  <div class="">Help</div>
+                  <div class="flex items-center justify-center gap-x-2 ">
+                      <div >
+                          <img class="w-6 h-6" src="assets/imagesr/SVGCart.png" alt="">
+                      </div>
+                      <div class="text-sm">0</div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+         </div>
+     </div>
+
+          <div class="text-white text-center space-y-5 pt-16">
+            <h1 class="text-3xl lg:text-4xl font-bold px-10 lg:px-0">New arrivals are here</h1>
+            <p class="mt-2 w-full px-2">The new arrivals have, well, newly arrived. Check out the latest options from our <br>
+                summer small-batch release while they're still in stock..</p>
+
+                <button class="px-10 py-2 rounded-md bg-white text-gray-900  font-medium text-center text-sm m">Shop New Arriavals</button>
+          </div>
+        </div>
+      </div>
+
+     <!-- Top bar menu  -->
+      
+</div>
+
+<!-- shop by category  -->
+<div class="container mx-auto pt-20 pb-10 bg-white">
+  <div class="w-full">
+    <div class="flex items-center justify-between py-2 lg:py-3 px-3 lg:px-5">
+        <div class="text-xl lg:text-2xl font-semibold">Shop by Category</div>
+        <div class="hidden lg:block text-sm text-blue-500 capitalize cursor-pointer">Browse All category</div>
+    </div>
+<!-- Category Item Part Start -->
+<div class="flex lg:grid lg:grid-cols-5 items-center justify-start px-5 ml-3 gap-x-5 overflow-x-auto lg:overflow-hidden w-full snap-x snap-mandatory scrollbar-hide">
+
+  @for (item of category; track $index) {
+    <!-- Item Part Start -->
+    <div class="relative flex lg:col-span-1 h-72 w-[192px] lg:w-full hover:shadow-lg rounded-2xl snap-start flex-shrink-0">
+      <div class="h-full w-full relative">
+        <div class="absolute inset-0 h-full w-full border bg-cover bg-center bg-no-repeat rounded-lg" [ngStyle]="{'background-image': 'url(' + item.image + ')'}"></div>
+        <div class="absolute inset-x-0 bottom-0 h-4/6 w-full bg-gradient-to-b from-white to-gray-600 opacity-50 rounded-b-lg"></div>
+      </div>
+      <div class="absolute bottom-5 text-center inset-x-0 text-white text-sm">{{item.title}}</div>
+    </div>
+    <!-- Item Part End -->
+  }
+
+</div>
+<!-- Category Item Part End -->
+
+  </div>
+</div>
+
+
+<!-- level up your desk start -->
+
+<div class="container mx-auto px-3 lg:px-5 pt-20">
+  <div class="w-full h-[438px] relative">
+    <div class="absolute inset-0 bg-cover bg-center bg-no-repeat"
+    style="background-image: url(assets/imagesr/middleBanar.png);">
+
+    </div>
+    <div class="absolute inset-0  bg-black opacity-50">
+    </div>
+    <div class="absolute flex flex-col gap-y-5 px-3 items-center justify-center h-full w-full">
+      <div class="text-white text-3xl font-semibold px-16 lg:px-0 text-center">Level up your desk</div>
+      <div class="text-white text-sm text-center font-medium">Make your desk beautiful and organized. Post a picture to social media and <br>
+        watch it get more likes than life-changing announcements. Reflect on the <br>
+        shallow nature of existence. At least you have a really nice desk setup.</div>
+        <button class="px-10 py-2 rounded-md bg-white text-gray-900  font-medium text-center text-sm m">Shop Workspace</button>
+    </div>
+  </div>
+</div>
+<!-- level up your desk end -->
+
+
+<!-- collection part start  -->
+<div class="container mx-auto px-3 lg:px-5 pt-10 lg:pt-20 bg-white">
+    <div class="space-y-4">
+      <h4 class="text-gray-900 text-2xl font-medium">Shop by Collection</h4>
+      <p class="text-xs text-gray-600">Each season, we collaborate with world-class designers to create a collection inspired by the natural world.</p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 w-full pt-5 gap-y-7 lg:gap-x-5">
+      @for (item of collection; track $index) {
+        <div class="col-span-1 w-full space-y-3">
+            <div class="w-full h-[250px] lg:h-[400px]">
+              <img class="h-full w-full rounded-lg" [src]="item.image" alt="">
+            </div>
+  
+            <div class="mt-5 space-y-1">
+              <div class="text-lg font-medium text-gray-900">{{item.title}}</div>
+            <div class="text-xs font-normal text-gray-600">{{item.para}}</div>
+            </div>
+        </div>
+      }
+    </div>
+</div>
+
+<!-- collection part start  -->
+
+
+<!-- simple productivity start -->
+
+<div class="container mx-auto px-3 lg:px-5 pt-20">
+  <div class="w-full h-[438px] relative">
+    <div class="absolute inset-0 bg-cover bg-center bg-no-repeat"
+    style="background-image: url(assets/imagesr/lastBanar.png);">
+    </div>
+    <div class="absolute inset-0  bg-black opacity-50">
+    </div>
+    <div class="absolute flex flex-col px-3 gap-y-5 items-center justify-center h-full w-full">
+      <div class="text-white text-xl lg:text-3xl font-semibold">Simple productivity</div>
+      <div class="text-white text-sm text-center font-medium">Endless tasks, limited hours, a single piece of paper. Not really a haiku, but we're <br>
+        doing our best here. No kanban boards, burndown charts, or tangled flowcharts <br>
+        with our Focus system. Just the undeniable urge to fill empty circles.</div>
+        <button class="px-10 py-2 rounded-md bg-white text-gray-900  font-medium text-center text-sm m">Shop Focus</button>
+    </div>
+  </div>
+</div>
+<!-- simple productivity end -->
+<div class="container mx-auto pt-20 px-5">
+  <div class="px-5 pt-12 pb-0 lg:py-14 bg-gray-900">
+    <div class="grid grid-cols-2 grid-rows-3 lg:grid-rows-1 gap-y-5 lg:grid-cols-6 ">
+      <div class="col-span-1">
+          <div class="flex flex-col items-start justify-start gap-y-5">
+            <div class="text-white text-lg font-medium">
+              Shop
+            </div>
+            <div class="text-xs text-white font-normal"><a href="">Bags</a></div>
+            <div class="text-xs text-white font-normal"><a href="">Tees</a></div>
+            <div class="text-xs text-white font-normal"><a href="">Objects</a></div>
+            <div class="text-xs text-white font-normal"><a href="">Home Goods</a></div>
+            <div class="text-xs text-white font-normal"><a href="">Accessories</a></div>
+          </div>
+      </div>
+
+    <div class="col-span-1">
+      <div class="flex flex-col items-start justify-start gap-y-5">
+        <div class="text-white text-lg font-medium">
+          Company
+        </div>
+        <div class="text-xs text-white font-normal"><a href="">Who we are</a></div>
+        <div class="text-xs text-white font-normal"><a href="">Tees</a></div>
+        <div class="text-xs text-white font-normal"><a href="">Sustainability</a></div>
+        <div class="text-xs text-white font-normal"><a href="">Press</a></div>
+        <div class="text-xs text-white font-normal"><a href="">Careers</a></div>
+        <div class="text-xs text-white font-normal"><a href="">Terms & Conditions</a></div>
+        <div class="text-xs text-white font-normal"><a href="">Privacy</a></div>
+
+      </div>
+  </div>
+
+  <div class="col-span-1">
+    <div class="flex flex-col items-start justify-start gap-y-5">
+      <div class="text-white text-lg font-medium">
+        Account
+      </div>
+      <div class="text-xs text-white font-normal"><a href="">Manage Account</a></div>
+      <div class="text-xs text-white font-normal"><a href="">Returns & Exchanges</a></div>
+      <div class="text-xs text-white font-normal"><a href="">Redeem a Gift Card</a></div>
+    </div>
+  </div>
+
+  <div class="col-span-1">
+    <div class="flex flex-col items-start justify-start gap-y-5">
+      <div class="text-white text-lg font-medium">
+        Connect
+      </div>
+      <div class="text-xs text-white font-normal"><a href="">Contact Us</a></div>
+      <div class="text-xs text-white font-normal"><a href="">Facebook</a></div>
+      <div class="text-xs text-white font-normal"><a href="">Instagram</a></div>
+      <div class="text-xs text-white font-normal"><a href="">Pinterest</a></div>
+    </div>
+</div>
+
+<div class="col-span-2">
+  <div class="flex flex-col items-start justify-start gap-y-3 lg:gap-y-5">
+    <div class="text-white text-sm lg:text-lg font-medium">
+      Sign Up for newslatter
+    </div>
+
+    <div class="space-y-5">
+      <p class="text-xs text-gray-200">The latest deals and savings, sent to your inbox weekly.</p>
+      <div class="flex items-center w-full gap-x-2">
+        <input type="text" class="bg-white py-2 rounded-lg px-2 text-gray-600 w-full outline-none">
+
+        <div class="p-1 rounded-lg bg-blue-500 text-white text-xs w-20 h-[39px] font-medium flex items-center justify-center">Sign up</div>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer top part start  -->
+ <!-- <div class="container mx-auto px-3 lg:px-5 pt-20 w-full bg-gray-900">
+
+ </div> -->
+<!-- Footer top part end -->
+
+
+
+  
+

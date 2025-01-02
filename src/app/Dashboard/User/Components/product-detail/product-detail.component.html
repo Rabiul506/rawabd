@@ -1,0 +1,116 @@
+
+<div class="container mx-auto bg-white h-full">
+    <!-- top menu bar  -->
+     <div class="flex items-center justify-between px-3 lg:px-5 py-3 border-b">
+            <div class="flex items-center justify-start gap-x-3 pl-10">
+                @for (item of catItem; track $index) {
+                    <div class="text-sm text-gray-600">{{item.name}}</div>
+                }
+            </div>
+
+            <div class="flex items-center justify-end">
+                <div class="flex items-center gap-x-3">
+                    <div class=""><img class="w-5 h-5" src="assets/imagesr/search.png" alt=""></div>
+                    <div class=""><img class="w-5 h-5" src="assets/imagesr/man.png" alt=""></div>
+                </div>
+            </div>
+     </div>
+
+
+     <div class="pt-8 lg:pt-10 w-full h-full">
+        <div class="flex items-center gap-x-3">
+            <div class="text-gray-800 text-xs">Men</div>
+            <div class="text-gray-300 text-xs">\</div>
+            <div class="text-gray-500 text-xs">Clothing</div>
+            <div class="text-gray-300 text-xs">\</div>
+            <div class="text-gray-500 text-xs">Bascic 6 packs</div>
+        </div>
+
+        <div class="pt-5 pb-10">
+            <div class="grid grid-cols-3 w-full gap-x-5">
+                <div class="col-span- w-full h-[450px]">
+                    <img class="h-full w-full" src="assets/imagesr/P1.png" alt="">
+                </div>
+
+                <div class="col-span-1 grid grid-cols-1 grid-rows-2 gap-y-5 h-[450px] w-full">
+                    <img class="h-full w-full" src="assets/imagesr/p2.png" alt="">
+                    <img class="h-full w-full" src="assets/imagesr/p3.png" alt="">
+                </div>
+
+                <div class="col-span-1 h-[450px] w-full">
+                    <img class="h-full w-full" src="assets/imagesr/p4.png" alt="">
+                </div>
+            </div>
+        </div>
+     </div>
+
+     
+
+</div>
+
+<div class="mt-5 container mx-auto bg-white ">
+    <!-- Detail part  -->
+    <div class="grid grid-cols-3 w-full">
+        <div class="col-span-2 border-r pr-5">
+            <h4>Bascic Tee 6 packs</h4>
+            <div class="pt-5 pb-10 space-y-5 border-b mb-10">
+                <div class="text-gray-700 text-[12px]">
+                    The Basic Tee 6-Pack allows you to fully express your vibrant personality with three grayscale
+                        options. Feeling adventurous? Put on a heather gray tee. Want to be a trendsetter? Try our                          exclusive
+                        colorway: "Black". Need to add an extra pop of color to your outfit? Our white tee has you                          covered.
+                </div>
+    
+                <div class="">
+                    <h4 class="text-sm text-gray-800">Highlights</h4>
+                    <div class="pl-2 pt-3 text-gray-500 text-xs space-y-3 ">
+                        <p>Hand cut and sewn locally</p>
+                        <p>Dyed with our proprietary colors</p>
+                        <p> Pre-washed & pre-shrunk </p>
+                        <p>Ultra-soft 100% cotton</p>
+                    </div>
+                </div>
+    
+                <div class="">
+                    <h4 class="text-sm text-gray-800">Details</h4>
+                    <div class="pt-3 text-gray-500 text-xs leading-relaxed">
+                        <p>The 6-Pack includes two black, two white, and two heather gray Basic Tees. Sign up for our subscription service
+                            and be the first to get new, exciting colors, like our upcoming "Charcoal Gray" limited release.</p>
+    
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-10 w-full">
+                @for (item of productRating; track $index) {
+                    <div class="flex items-start gap-x-8 w-full mb-5 h-full">
+                        <div class="flex items-start justify-start space-y-3 w-2/12">
+                                                    <!-- left side  -->
+                        <div class="h-full space-y-1">
+                            <!-- img  -->
+                            <div class="h-6 w-6 rounded-full text-xs" >
+                                <!-- {{item.image}} -->
+                                 <img src="assets/imagesr/img1.png" alt="">
+                            </div>
+                            <!-- name  -->
+                            <div class="text-gray-800 text-xs">{{item.name}}</div>
+                            <!-- rating  -->
+                            <div class="text-gray-800 text-xs">{{item.rating}}</div>
+                        </div>
+                    </div>
+                    <!-- right side  -->
+                    <div class="space-y-3 px-5 w-10/12">
+                        <div class="text-gray-800 text-sm">{{item.title}}</div>
+
+                        <div class="text-gray-500 text-xs leading-relaxed">{{item.description}}</div>
+                    </div>
+
+                    </div>
+                }
+            </div>
+        </div>
+        <div class="col-span-1"></div>
+     </div>
+
+</div>
+
+
